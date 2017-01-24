@@ -1,0 +1,31 @@
+{
+    "name": "davidvarney/plivo-complete",
+    "description": "Complete Plivo driver for Laravel",
+    "keywords": [
+        "laravel",
+        "plivo"
+    ],
+    "homepage": "https://github.com/davidvarney/plivo-complete",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Varney",
+            "email": "davidvarney@gmail.com",
+            "homepage": "https://github.com/davidvarney",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*",
+        "plivo/plivo-php": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DavidVarney\\Plivo\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
