@@ -8,7 +8,7 @@ class PlivoServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/plivo.php', 'plivo');
+        $this->mergeConfigFrom(__DIR__ . '/../config/plivo.php', 'plivo');
 
         $this->app->singleton('plivo', function () {
             return new Plivo;
@@ -18,7 +18,7 @@ class PlivoServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/plivo.php' => base_path('config/plivo.php'),
+            __DIR__ . '/../config/plivo.php' => base_path('config/plivo.php'),
         ]);
     }
 }
